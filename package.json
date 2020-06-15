@@ -1,6 +1,9 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.16.1"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -13,7 +16,6 @@
     "react-scripts": "3.4.1",
     "reactstrap": "^8.4.1",
     "serve": "^11.3.0"
-
   },
   "scripts": {
     "start": "serve -s build",
