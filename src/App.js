@@ -43,7 +43,10 @@ class App extends Component {
 
 
   deleteTodo(url){
-    axios.delete(url,{
+    let url2 = url;
+    var pieces = url2.split("/");
+    console.log(pieces[3]);
+    axios.delete('https://todo-backend-express-csp.herokuapp.com/'+pieces[3],{
 
     }).then((response) =>{
       this._refreshTodos()
